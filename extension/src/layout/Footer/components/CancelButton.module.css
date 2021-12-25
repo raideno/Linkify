@@ -1,6 +1,6 @@
 .button {
-  width: 330px;
-  height: 65px;
+  width: 205px;
+  height: 50px;
   border-radius: 8px;
   background-color: transparent;
   border: 5px var(--color-red) solid;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   color: var(--color-red);
-  transition: 0.25s ease-out;
+  transition: 0.25s;
   cursor: pointer;
 }
 

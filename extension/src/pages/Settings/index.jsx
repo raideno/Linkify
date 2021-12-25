@@ -4,8 +4,10 @@ import ClearLinks from "./components/ClearLinks";
 
 function Settings() {
   return (
-    <div>
-      <div>Settings</div>
+    <div className={styles.container}>
+      <Setting name={"Synchronisation"} />
+      <Setting name={"Ferme Le"} />
+      <ClearLinks />
     </div>
   );
 }

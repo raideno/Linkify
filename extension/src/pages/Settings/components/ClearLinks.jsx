@@ -2,9 +2,10 @@ import styles from "./ClearLinks.module.css";
 
 function ClearLinks() {
   return (
-    <div>
-      <div>ClearLinks</div>
-    </div>
+    <button className={styles.button}>
+      <i className="fas fa-trash" />
+      ClearLinks
+    </button>
   );
 }
 

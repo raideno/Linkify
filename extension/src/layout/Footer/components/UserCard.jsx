@@ -5,7 +5,6 @@ function UserCard() {
   const { navigate } = useRouter();
 
   function handleClick() {
-    console.log("Click");
     navigate("/settings");
   }
 

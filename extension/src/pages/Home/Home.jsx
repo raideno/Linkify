@@ -11,8 +11,8 @@ function Home() {
         <div className={styles.text}>No Links Yet :(</div>
       ) : (
         <div className={styles.links}>
-          {links.map(() => (
-            <Link />
+          {links.map((_, i) => (
+            <Link key={"Home-link-" + i} />
           ))}
         </div>
       )}

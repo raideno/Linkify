@@ -1,0 +1,18 @@
+.button {
+  width: 205px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--color-green);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
