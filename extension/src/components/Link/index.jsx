@@ -3,6 +3,9 @@ import styles from "./style.module.css";
 function Link({ data }) {
   console.log(data);
 
+  const title = data.link.split("//")[1].split(".")[0];
+  const description = "Linkify Website...";
+
   function handleClick() {
     chrome.tabs.create({ url: data.link });
   }
@@ -12,8 +15,8 @@ function Link({ data }) {
       <div className={styles.left}>
         <div className={styles.logo} />
         <div className={styles.texts}>
-          <div className={styles.title}>Comment Faire...</div>
-          <div className={styles.description}>Une vidéo youtube po...</div>
+          <div className={styles.title}>{title}</div>
+          <div className={styles.description}>{description}</div>
         </div>
       </div>
       <div className={styles.right}>
