@@ -1,10 +1,10 @@
 .button {
-  width: 330px;
-  height: 65px;
+  width: 225px;
+  height: 50px;
   border-radius: 8px;
   background-color: transparent;
   border: 5px var(--color-red) solid;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   gap: 0.5rem;
   display: flex;

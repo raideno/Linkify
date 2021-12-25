@@ -1,6 +1,12 @@
 import styles from "./style.module.css";
 
-function Link() {
+function Link({ data }) {
+  console.log(data);
+
+  function handleClick() {
+    chrome.tabs.create({ url: data.link });
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -11,7 +17,7 @@ function Link() {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.icon}>
+        <div className={styles.icon} onClick={handleClick}>
           <i className="fas fa-2x fa-external-link-alt" />
         </div>
       </div>
