@@ -1,0 +1,9 @@
+.App {
+  gap: 1rem;
+  height: 100%;
+  display: grid;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem; /*default: `padding: 1.5rem 3rem`*/
+  grid-template-rows: 1fr 5fr 1fr;
+  background-color: var(--color-background);
+}
