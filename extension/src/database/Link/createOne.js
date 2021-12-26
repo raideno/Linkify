@@ -3,10 +3,9 @@ export default function createOne({ link, title = null, description = null, keyw
     chrome.storage.local.get({
         links: []
     }, function (result) {
-        var links = result.links;
-        links.push({ link: link, title, description, keywords, category });
+        const newLinks = [{ link: link, title, description, keywords, category }, ...result.links,];
         chrome.storage.local.set({
-            links: links
+            links: newLinks
         }, function () {
             chrome.storage.local.get('links', function (result) {
                 console.log(result.links)

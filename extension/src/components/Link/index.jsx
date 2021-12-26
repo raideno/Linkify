@@ -3,7 +3,6 @@ import styles from "./style.module.css";
 function Link({ data }) {
   console.log(data);
 
-  const title = data.link.split("//")[1].split(".")[0];
   const description = "Linkify Website...";
 
   function handleClick() {
@@ -15,7 +14,7 @@ function Link({ data }) {
       <div className={styles.left}>
         <div className={styles.logo} />
         <div className={styles.texts}>
-          <div className={styles.title}>{title}</div>
+          <div className={styles.title}>{data.title}</div>
           <div className={styles.description}>{description}</div>
         </div>
       </div>

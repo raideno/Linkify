@@ -6,16 +6,19 @@ import { createOne } from "../../../database/Link";
 function CreateButton() {
   const router = useRouter();
   const [url, setUrl] = useState("");
+  const [title, setTitle] = useState("");
 
   function handleClick() {
-    createOne({ link: url });
+    createOne({ link: url, title });
     router.navigate("/");
   }
 
   useEffect(() => {
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
       let url = tabs[0].url;
+      let title = tabs[0].title;
       setUrl(url);
+      setTitle(title);
     });
   }, []);
 
